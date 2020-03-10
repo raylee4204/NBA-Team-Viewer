@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NBA Team Viewer</string>
+    <string name="title_activity_teams">Teams</string>
+    <string name="title_activity_team">Team</string>
+
+    <string name="team_wins">Wins: %d</string>
+    <string name="team_losses">Losses: %d</string>
+
+    <string name="action_menu_sort_alphabetic">Alphabetical</string>
+    <string name="action_menu_sort_wins">Wins</string>
+    <string name="action_menu_sort_losses">Losses</string>
+</resources>

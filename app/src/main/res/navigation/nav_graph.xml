@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/teamListFragment">
+
+    <fragment
+        android:id="@+id/teamListFragment"
+        android:name="com.thescore.nbateamviewer.app.teamlist.TeamListFragment"
+        android:label="@string/title_activity_teams"
+        tools:layout="@layout/fragment_team_list">
+        <action
+            android:id="@+id/action_to_team"
+            app:destination="@+id/teamFragment"
+            app:enterAnim="@anim/slide_in_from_right"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/slide_out_from_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.thescore.nbateamviewer.app.team.TeamFragment"
+        android:label="@string/title_activity_team"
+        tools:layout="@layout/fragment_team">
+        <argument
+            android:name="team"
+            app:argType="com.thescore.nbateamviewer.domain.model.Team" />
+    </fragment>
+</navigation>
